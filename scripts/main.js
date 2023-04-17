@@ -270,8 +270,11 @@ function calculator(btn) {
     else if(btn.type == 'trigo_function') {
         
     }else if(btn.type == 'math_function') {
-        
-    }else if(btn.type == 'key') {
+         //square-root funtionality derived from the btn name property
+       if(btn.name=='square-root'){
+      data.operation.push(btn.symbol + '(')
+      data.formula.push(btn.formula + '(')
+       }else if(btn.type == 'key') {
         
     }
     else if(btn.type == 'calculate') {
